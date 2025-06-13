@@ -190,7 +190,14 @@
       const restart = document.getElementById("restartBtn");
       const error = document.getElementById("error");
       const msg = document.getElementById("message");
-      const text = `Как тебе идея Жасур...`;
+      const text = `Как тебе идея Жасур...
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis modi
+      veritatis doloribus explicabo consequuntur adipisci in minima suscipit
+      assumenda. Eligendi aliquam possimus aperiam natus adipisci repellat nobis
+      dolores totam sit?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Laborum quaerat dolorem nobis et molestiae repellendus perspiciatis amet
+      accusamus deleniti magnam, quas dolorum. Eos a esse ipsum, inventore
+      deserunt ipsa quod.`;
 
       btn.addEventListener("click", () => {
         btn.disabled = true;
@@ -200,16 +207,7 @@
           .value.trim()
           .toLowerCase();
         if (val !== secret) {
-          error.textContent = `Неправильное ключевое слово попробуйте заново!
-          
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis modi
-          veritatis doloribus explicabo consequuntur adipisci in minima suscipit
-          assumenda. Eligendi aliquam possimus aperiam natus adipisci repellat nobis
-          dolores totam sit?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Laborum quaerat dolorem nobis et molestiae repellendus perspiciatis amet
-          accusamus deleniti magnam, quas dolorum. Eos a esse ipsum, inventore
-          deserunt ipsa quod.
-          `;
+          error.textContent = `Неправильное ключевое слово попробуйте заново!`;
           restart.style.display = "inline-block";
           return;
         }
